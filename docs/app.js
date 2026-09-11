@@ -26,7 +26,19 @@ document.addEventListener('change',e=>{const t=e.target;if(t.dataset.task){state
 document.addEventListener('click',e=>{const b=e.target.closest('[data-delete]');if(b&&confirm('Xóa mục này khỏi thiết bị?')){state[b.dataset.delete]=state[b.dataset.delete].filter(x=>x.id!==b.dataset.id);save()}});
 function downloadText(text,name,type){const url=URL.createObjectURL(new Blob([text],{type}));const a=document.createElement('a');a.href=url;a.download=name;a.click();setTimeout(()=>URL.revokeObjectURL(url),1000)}
 $('#export').addEventListener('click',()=>{if(!storageOK&&recoveryRaw!==null){downloadText(recoveryRaw,'life-stable-recovery.txt','text/plain');notify('Đã tải nguyên dữ liệu chưa đọc được. Giữ file ở nơi riêng tư để phục hồi.');return}downloadText(JSON.stringify(state,null,2),`life-stable-${new Date().toISOString().slice(0,10)}.json`,'application/json');notify('Đã xuất bản sao. Giữ file ở nơi riêng tư.')});
-$('#import').addEventListener('change',async e=>{const f=e.target.files[0];if(!f)return;try{if(f.size>5000000)throw Error();const data=JSON.parse(await f.text());if(!valid(data))throw Error();if(confirm('Thay thế toàn bộ ghi chép trên thiết bị bằng bản sao này? Hãy xuất dữ liệu hiện tại trước nếu cần.')){const old=state;const oldOK=storageOK;state=normalize(data);storageOK=true;if(!save()){state=old;storageOK=oldOK;render()}else{$('#recover-raw').hidden=true;recoveryRaw=null}}}catch{notify('File không đúng định dạng sao lưu hoặc quá lớn. Dữ liệu hiện tại được giữ nguyên.')}e.target.value=''});
+$('#import').addEventListener('change',async e=>{const f=e.target.files[0];if(!f)return;let data=null;try{if(f.size>5000000)throw Error('File quá lớn.');data=JSON.parse(await f.text());
+ if(data&&data.kind==='life-stable-hr'){
+  const incoming=HRModel.parseBundle(data),result=HRModel.mergeJobs(state.jobs||[],incoming);
+  if(result.added===0){notify('File hồ sơ ứng tuyển này đã có đủ ID trên thiết bị. Không có gì để thêm.');return}
+  if(confirm(`Đây là file hồ sơ ứng tuyển riêng tư. Thêm ${result.added} hồ sơ vào pipeline? Hồ sơ đang có sẽ không bị ghi đè.`)){
+   const old=state,oldOK=storageOK;state=normalize({...state,jobs:result.jobs});storageOK=true;
+   if(!save()){state=old;storageOK=oldOK;render()}else notify(`Đã thêm ${result.added} hồ sơ ứng tuyển; giữ nguyên ${result.skipped} hồ sơ đã có.`)
+  }
+  return
+ }
+ if(!valid(data))throw Error('File sao lưu toàn bộ không đúng định dạng.');
+ if(confirm('Thay thế toàn bộ ghi chép trên thiết bị bằng bản sao này? Hãy xuất dữ liệu hiện tại trước nếu cần.')){const old=state;const oldOK=storageOK;state=normalize(data);storageOK=true;if(!save()){state=old;storageOK=oldOK;render()}else{$('#recover-raw').hidden=true;recoveryRaw=null}}
+ }catch(err){notify(err.message==='File quá lớn.'?`${err.message} Dữ liệu hiện tại được giữ nguyên.`:'File sao lưu không đọc được hoặc không đúng định dạng. Dữ liệu hiện tại được giữ nguyên.')}finally{e.target.value=''}});
 let installPrompt=null;const standalone=()=>matchMedia('(display-mode: standalone)').matches||navigator.standalone===true;
 function installed(){if(standalone()){$('#install').textContent='Đang dùng app';$('#install').disabled=true}}
 window.addEventListener('beforeinstallprompt',e=>{e.preventDefault();installPrompt=e;$('#install').textContent='Cài app';$('#install-status').textContent='Trình duyệt đã cho phép cài. Bấm Cài app để tiếp tục.'});
