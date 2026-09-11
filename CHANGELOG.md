@@ -31,3 +31,11 @@
 - Forced life deadlines.
 - Unnecessary proof to others.
 - `force-push` behavior.
+
+## V5 — 2026-09-12
+
+- Thêm app tĩnh trong docs: bảng việc, review quyết định, nhật ký tuần.
+- Lưu dữ liệu trên thiết bị, xuất/nhập sao lưu có xác nhận.
+- Thêm manifest, icon PNG và service worker chạy ngoại tuyến.
+- Trạng thái cài đặt theo khả năng trình duyệt, hướng dẫn Android/iOS.
+- Thêm workflow GitHub Pages; trạng thái xuất bản được kiểm chứng riêng.

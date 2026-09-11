@@ -44,3 +44,11 @@ Chạy theo việc làm, thành công, kỳ vọng, nợ và mặt mũi làm tă
 ### Guardrail
 
 Bình thản không đồng nghĩa bỏ trách nhiệm.
+
+## 2026-09-12 — Stable mode có hành động
+
+- Chuyển nguyên tắc thành bảng việc, review quyết định và nhật ký tuần.
+- Ghi rõ bằng chứng và dữ liệu thiếu; chưa có phản hồi không tự động là bị từ chối.
+- Dữ liệu cá nhân lưu trên thiết bị, xuất sao lưu chủ động, không đẩy lên repo public.
+- Không có điểm năng suất, streak hay deadline cuộc đời.
+- Theo dõi nghĩa vụ thực tế và hành động tiếp theo: bình thản vẫn cần bảo trì.

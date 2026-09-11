@@ -67,3 +67,17 @@ Memory được sync theo nguyên tắc **giữ quyết định và context có 
 ## Rule số 1
 
 **Tao không bỏ mục tiêu. Tao chỉ không để mục tiêu dắt mũi tao nữa.**
+
+## V5 — từ nguyên tắc sang hành động
+
+Ứng dụng trong `docs/` gồm bảng việc với bước tiếp theo, phiếu review quyết định (bằng chứng, giả định, chi phí, đường lui), và nhật ký tuần. Không chấm điểm giá trị bản thân hay ép chuỗi ngày thành tích.
+
+Dữ liệu người dùng được lưu tại trình duyệt; không gửi lên repo. Có xuất/nhập JSON để sao lưu. Không có đồng bộ giữa thiết bị; xóa dữ liệu trình duyệt có thể làm mất ghi chép. Không dùng làm kho bí mật được mã hóa.
+
+### Web & cài app
+
+GitHub Actions triển khai thư mục `docs/` lên GitHub Pages. Xem URL chính xác ở run thành công của workflow **Publish Stable Mode PWA**. Nếu Pages chưa bật và workflow không đủ quyền bật, vào Settings → Pages → Source: GitHub Actions rồi chạy lại workflow.
+
+App có manifest, icon PNG 192/512, icon maskable, scope tương đối và service worker cho offline. Cài từ link HTTPS của web, không từ trang xem mã GitHub. Chrome Android: menu → Cài đặt ứng dụng; Safari iOS: Chia sẻ → Thêm vào Màn hình chính. Không có `beforeinstallprompt` không tự nó chứng minh PWA bị lỗi.
+
+Khi thay tài nguyên trong `docs/`, tăng phiên bản cache trong `sw.js`. Bản cập nhật service worker được kích hoạt khi các cửa sổ cũ đóng, để tránh trộn phiên bản.
