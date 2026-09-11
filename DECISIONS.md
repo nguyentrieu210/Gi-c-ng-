@@ -1,5 +1,27 @@
 # Decision Log
 
+## 2026-09-12 — Public memory sync
+
+### Decision
+
+Sync bối cảnh dài hạn có ích vào repo public theo nguyên tắc: giữ decision context, không biến repo thành bản sao nguyên xi của toàn bộ lịch sử chat.
+
+### Keep
+
+- Career direction và nguyên tắc chọn việc.
+- ERP/system thinking.
+- Project context có ích cho quyết định tiếp theo.
+- Stable-mode policies.
+- Các kết luận nghiên cứu có giá trị lâu dài.
+
+### Boundary
+
+Không đưa dữ liệu riêng tư hoặc thông tin nhạy cảm không cần thiết vào repo public.
+
+### Reason
+
+Memory tốt là **decision context**, không phải data dump.
+
 ## 2026-09-12 — Enter stable mode
 
 ### Decision
