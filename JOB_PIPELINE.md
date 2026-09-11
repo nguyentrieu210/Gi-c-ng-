@@ -14,7 +14,7 @@
 - Farm / Production Operations Management.
 - Trưởng/phó phòng hoặc quản lý có scope tương xứng.
 
-Không tự hạ chuẩn xuống vị trí kỹ sư/công nhân chỉ vì pipeline đang chậm.
+Không nhận việc chỉ để thoát cảm giác bị đánh giá. Cũng không loại việc chỉ vì tên chức danh: xem trách nhiệm, quyền hạn, điều kiện làm việc, khả năng dùng năng lực và nhu cầu thực tế. Việc tạm không làm giảm giá trị chuyên môn.
 
 ## Quy tắc
 
@@ -53,7 +53,7 @@ Close PR   Evaluate
 
 Một công việc chỉ được `merge` khi:
 - đủ ổn để sống,
-- scope không kéo mình xuống vô lý,
+- trách nhiệm và quyền hạn đã được làm rõ,
 - thu nhập và trách nhiệm tương đối cân xứng,
 - có khả năng duy trì,
 - có không gian để dùng năng lực quản lý/vận hành/kế hoạch,
@@ -69,3 +69,11 @@ CV và cách trao đổi với HR ưu tiên nhấn mạnh:
 - quản lý nguồn lực,
 - tư duy ERP / workflow,
 - nền tảng Lâm nghiệp và Quản lý tài nguyên rừng thay vì tự mô tả thành “Kỹ sư Nông nghiệp” thuần.
+
+## Trạng thái phải có căn cứ
+
+Ghi nguồn và ngày của phản hồi. “Đã xem CV”, “được mời phỏng vấn”, “có offer” và “đã nhận việc” là những sự kiện khác nhau. Memory cũ chỉ làm bối cảnh, không tự cập nhật thành tình trạng hiện tại.
+
+Mỗi hồ sơ đang chờ cần có người/điều đang chờ và điểm xem lại. Không có phản hồi chưa đủ kết luận trượt; nộp nhiều hồ sơ cũng không đủ kết luận sắp có offer.
+
+Xem [mô hình vận hành](./OPERATING_MODEL.md) để phân biệt dữ kiện, diễn giải và quyết định.

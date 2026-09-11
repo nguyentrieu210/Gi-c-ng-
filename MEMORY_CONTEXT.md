@@ -105,7 +105,8 @@ Tư duy tương tự được áp dụng cho cuộc sống:
 
 - Repo sống: `nguyentrieu210/Gi-c-ng-`.
 - Branch chuẩn: `main`.
-- PWA stable mode đã từng được triển khai ở `life-stable-mode.hatchable.site`.
+- Web chính hiện tại: https://nguyentrieu210.github.io/Gi-c-ng-/
+- Địa chỉ Hatchable thuộc lịch sử triển khai; không dùng làm link vận hành hiện tại.
 - Triết lý repo: ít file, trạng thái rõ, commit có ý nghĩa, không force-push cuộc đời.
 
 ## Privacy boundary
@@ -118,3 +119,9 @@ Repo này là **public**. Vì vậy không lưu công khai:
 - nội dung riêng tư của người thân hoặc bên thứ ba.
 
 Memory nên giữ **quyết định, pattern và context có ích**, không giữ mọi chi tiết chỉ vì chúng từng xuất hiện trong chat.
+
+## Cách dùng bối cảnh này
+
+Bối cảnh lịch sử không phải bằng chứng về trạng thái hiện tại. Không tự suy ra tình trạng tuyển dụng, mức độ khẩn của nghĩa vụ hoặc khả năng dùng nguồn lực từ file này.
+
+Các bài học được chuyển thành [mô hình vận hành](./OPERATING_MODEL.md); các thay đổi sản phẩm nằm trong [roadmap](./PRODUCT_ROADMAP.md). Đây là cách đọc bối cảnh để ra quyết định, không phải yêu cầu thu thập thêm mọi thông tin đời tư.

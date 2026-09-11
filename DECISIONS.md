@@ -52,3 +52,15 @@ Bình thản không đồng nghĩa bỏ trách nhiệm.
 - Dữ liệu cá nhân lưu trên thiết bị, xuất sao lưu chủ động, không đẩy lên repo public.
 - Không có điểm năng suất, streak hay deadline cuộc đời.
 - Theo dõi nghĩa vụ thực tế và hành động tiếp theo: bình thản vẫn cần bảo trì.
+
+## 2026-09-12 — Giữ khả năng tự quyết
+
+Theo yêu cầu nâng repo từ memory thành hệ thống có ý nghĩa, bổ sung mô hình vận hành và roadmap.
+
+- Tách giá trị con người, điều kiện thực tế và hành động.
+- Phân biệt dữ kiện với diễn giải; chờ đợi có điểm xem lại.
+- Đánh giá cơ hội bằng điều kiện thực tế, không chỉ chức danh.
+- Không kết luận mức độ khẩn của nghĩa vụ khi thiếu số liệu.
+- Chỉ thêm công cụ khi giải quyết một trở ngại cụ thể.
+
+Đây là định hướng sản phẩm đề xuất trong PR; chưa triển khai backend hoặc các trạng thái mới trong app.

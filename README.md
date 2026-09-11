@@ -4,7 +4,13 @@
 >
 > `feat: stop forcing life, keep system running`
 
-Repo này không phải “triết lý thành công”. Nó là **chế độ vận hành ổn định** khi cuộc đời đang nhiều biến động.
+Mục tiêu: **giữ khả năng tự quyết khi hoàn cảnh biến động** — biết điều gì cần làm, điều gì đang chờ và điều gì cần thêm bằng chứng.
+
+Bắt đầu bằng [Mô hình vận hành](./OPERATING_MODEL.md). Đọc [Roadmap](./PRODUCT_ROADMAP.md) để phân biệt chức năng đã có và phần cần xây.
+
+App đang chạy: [Giác ngộ V5](https://nguyentrieu210.github.io/Gi-c-ng-/). Hiện dữ liệu chỉ lưu trên trình duyệt; chưa có backend hay đồng bộ.
+
+Repo tổ chức công việc và quyết định. Nó không chấm điểm cuộc đời.
 
 ## Operating principles
 
@@ -18,7 +24,7 @@ Repo này không phải “triết lý thành công”. Nó là **chế độ v�
 - Giữ sức khỏe, dòng tiền tối thiểu và khả năng nắm bắt cơ hội.
 - Không `git reset --hard` cả cuộc đời chỉ vì một ngày xấu.
 
-## Current state
+## Nguyên tắc mong muốn — không phải số liệu đã xác minh
 
 ```text
 branch: main
@@ -27,7 +33,7 @@ panic: disabled
 force_push: disabled
 job_pipeline: open
 family_argument: minimized
-debt_backlog: tracked
+debt_backlog: requires_private_tracking
 life_status: running
 ```
 
