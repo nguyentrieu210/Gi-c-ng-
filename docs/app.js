@@ -31,6 +31,7 @@ $('#import').addEventListener('change',async e=>{const f=e.target.files[0];if(!f
   const incoming=HRModel.parseBundle(data),result=HRModel.mergeJobs(state.jobs||[],incoming);
   if(result.added===0){notify('File hồ sơ ứng tuyển này đã có đủ ID trên thiết bị. Không có gì để thêm.');return}
   if(confirm(`Đây là file hồ sơ ứng tuyển riêng tư. Thêm ${result.added} hồ sơ vào pipeline? Hồ sơ đang có sẽ không bị ghi đè.`)){
+   if(!storageOK){notify('Chưa thể nhập hồ sơ vì dữ liệu cũ đang lỗi. Hãy tải nguyên dữ liệu bị lỗi trước; dữ liệu hiện tại được giữ nguyên.');return}
    const old=state,oldOK=storageOK;state=normalize({...state,jobs:result.jobs});storageOK=true;
    if(!save()){state=old;storageOK=oldOK;render()}else notify(`Đã thêm ${result.added} hồ sơ ứng tuyển; giữ nguyên ${result.skipped} hồ sơ đã có.`)
   }
