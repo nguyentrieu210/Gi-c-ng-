@@ -64,3 +64,11 @@ Theo yêu cầu nâng repo từ memory thành hệ thống có ý nghĩa, bổ s
 - Chỉ thêm công cụ khi giải quyết một trở ngại cụ thể.
 
 Đây là định hướng sản phẩm đề xuất trong PR; chưa triển khai backend hoặc các trạng thái mới trong app.
+
+## 2026-09-12 — Career pipeline có căn cứ
+
+- Không nhập hồ sơ tuyển dụng cá nhân vào repo public.
+- App nhận hồ sơ qua dữ liệu riêng trên thiết bị; lịch sử phải có nhãn cần xác minh.
+- Có JD, đã nộp, đã xem CV, phản hồi, phỏng vấn, offer và đã nhận là các sự kiện khác nhau.
+- Chưa phản hồi không tự chuyển thành đã đóng.
+- Rà soát GitHub không thấy PR mở về HR/tuyển dụng; PR #1 của repo đã merge, PR mở ở `appweb` là ADR kỹ thuật.

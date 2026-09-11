@@ -39,3 +39,11 @@
 - Thêm manifest, icon PNG và service worker chạy ngoại tuyến.
 - Trạng thái cài đặt theo khả năng trình duyệt, hướng dẫn Android/iOS.
 - Thêm workflow GitHub Pages; trạng thái xuất bản được kiểm chứng riêng.
+
+## V5.1 — 2026-09-12
+
+- Thêm tab Ứng tuyển để theo dõi công ty, vị trí, trạng thái, nguồn xác nhận, ngày liên hệ, điểm xem lại và bước tiếp theo.
+- Có sửa, lưu trữ/khôi phục, tìm kiếm, lọc, liên kết phiếu review và nhập/xuất hồ sơ riêng tư.
+- Hồ sơ lịch sử được đánh dấu cần xác minh; không tự suy diễn từ việc chưa phản hồi.
+- Sửa backup schema từ V5 để giữ `jobs` và cứu dữ liệu raw khi state cũ lỗi.
+- Ghi kết quả rà soát: không có GitHub PR tuyển dụng đang mở trong tài khoản; PR #1 đã merge.
