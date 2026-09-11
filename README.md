@@ -8,7 +8,7 @@ Mục tiêu: **giữ khả năng tự quyết khi hoàn cảnh biến động** 
 
 Bắt đầu bằng [Mô hình vận hành](./OPERATING_MODEL.md). Đọc [Roadmap](./PRODUCT_ROADMAP.md) để phân biệt chức năng đã có và phần cần xây.
 
-App đang chạy: [Giác ngộ V5](https://nguyentrieu210.github.io/Gi-c-ng-/). Hiện dữ liệu chỉ lưu trên trình duyệt; chưa có backend hay đồng bộ.
+App đang chạy: [Giác ngộ V5.1](https://nguyentrieu210.github.io/Gi-c-ng-/). Hiện dữ liệu chỉ lưu trên trình duyệt; chưa có backend hay đồng bộ.
 
 Repo tổ chức công việc và quyết định. Nó không chấm điểm cuộc đời.
 
@@ -60,6 +60,8 @@ Close PR   Evaluate
 ## Repo map
 
 - [`JOB_PIPELINE.md`](./JOB_PIPELINE.md) — career pipeline và Definition of Done cho một offer.
+- [`CAREER_REVIEW.md`](./CAREER_REVIEW.md) — kết quả rà soát PR và quy tắc đọc hồ sơ tuyển dụng.
+- [`OPERATING_MODEL.md`](./OPERATING_MODEL.md) — mô hình dùng dữ kiện để chọn bước tiếp theo.
 - [`DEBT.md`](./DEBT.md) — debt backlog policy.
 - [`FAMILY_BOUNDARY.md`](./FAMILY_BOUNDARY.md) — boundary để giảm tranh luận hao năng lượng.
 - [`DECISIONS.md`](./DECISIONS.md) — decision log.
@@ -74,9 +76,9 @@ Memory được sync theo nguyên tắc **giữ quyết định và context có 
 
 **Tao không bỏ mục tiêu. Tao chỉ không để mục tiêu dắt mũi tao nữa.**
 
-## V5 — từ nguyên tắc sang hành động
+## V5.1 — từ bối cảnh sang quyết định có căn cứ
 
-Ứng dụng trong `docs/` gồm bảng việc với bước tiếp theo, phiếu review quyết định (bằng chứng, giả định, chi phí, đường lui), và nhật ký tuần. Không chấm điểm giá trị bản thân hay ép chuỗi ngày thành tích.
+Ứng dụng trong `docs/` gồm bảng việc với bước tiếp theo, hồ sơ ứng tuyển, phiếu review quyết định (bằng chứng, giả định, chi phí, đường lui), và nhật ký tuần. Hồ sơ ứng tuyển có trạng thái, nguồn xác nhận, mốc liên hệ, điểm xem lại, lưu trữ và liên kết phiếu review. Không chấm điểm giá trị bản thân hay ép chuỗi ngày thành tích.
 
 Dữ liệu người dùng được lưu tại trình duyệt; không gửi lên repo. Có xuất/nhập JSON để sao lưu. Không có đồng bộ giữa thiết bị; xóa dữ liệu trình duyệt có thể làm mất ghi chép. Không dùng làm kho bí mật được mã hóa.
 

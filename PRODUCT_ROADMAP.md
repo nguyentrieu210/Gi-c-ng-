@@ -46,6 +46,8 @@ Chưa chọn nhà cung cấp. Chọn theo khả năng phân quyền, khôi phụ
 
 ## PR 4 — Cơ hội nghề nghiệp thành hồ sơ có căn cứ
 
+> V5.1 đã triển khai bản đầu: tạo/sửa/lưu trữ hồ sơ, trạng thái có nguồn và ngày, điểm xem lại, nhập/xuất riêng, tìm kiếm và liên kết phiếu review. Backend đồng bộ vẫn thuộc PR 3.
+
 Vấn đề: nhóm “Công việc” không thay được hồ sơ ứng tuyển.
 
 Hoàn thành khi:
