@@ -51,6 +51,19 @@ Close PR   Evaluate
      Decline     Merge
 ```
 
+## Repo map
+
+- [`JOB_PIPELINE.md`](./JOB_PIPELINE.md) — career pipeline và Definition of Done cho một offer.
+- [`DEBT.md`](./DEBT.md) — debt backlog policy.
+- [`FAMILY_BOUNDARY.md`](./FAMILY_BOUNDARY.md) — boundary để giảm tranh luận hao năng lượng.
+- [`DECISIONS.md`](./DECISIONS.md) — decision log.
+- [`MEMORY_CONTEXT.md`](./MEMORY_CONTEXT.md) — bối cảnh dài hạn đã được lọc để phù hợp với repo public: career, ERP/system thinking, Alumdoor, automation, trading research và PWA/GitHub context.
+- [`CHANGELOG.md`](./CHANGELOG.md) — lịch sử thay đổi.
+
+## Public-repo rule
+
+Memory được sync theo nguyên tắc **giữ quyết định và context có ích, bỏ dữ liệu riêng tư không cần thiết**. Repo public không phải bản sao nguyên xi của lịch sử chat.
+
 ## Rule số 1
 
 **Tao không bỏ mục tiêu. Tao chỉ không để mục tiêu dắt mũi tao nữa.**
