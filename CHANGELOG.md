@@ -1,5 +1,15 @@
 # Changelog
 
+## [0.3.0] - 2026-09-12
+
+### Added
+- Task workflow v3: `Sẵn sàng`, `Đang làm`, `Đang chờ`, `Bị chặn`, `Đã xong`, `Đã lưu trữ`.
+- Màn `Bây giờ`, điểm xem lại, context cho việc chờ/bị chặn và sửa/lưu trữ/khôi phục task.
+
+### Changed
+- State V5/V5.1 tự migrate lên schema v3 mà không bịa deadline.
+- Giữ nguyên ranh giới: dữ liệu cá nhân vẫn chỉ ở trình duyệt, chưa có backend đồng bộ.
+
 ## [0.2.0] - 2026-09-12
 
 ### Added

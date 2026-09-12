@@ -34,7 +34,7 @@ Không dùng khó khăn ở lớp 2 để kết án lớp 1. Cũng không dùng 
 | Done | Kết quả thực tế đã đạt | Bằng chứng ngắn | Lưu lại; không cần tạo việc mới để lấp bảng |
 | Archived | Không còn đáng theo đuổi | Lý do đóng | Có dữ kiện mới đủ để mở lại |
 
-Đây là mô hình mục tiêu. V5 chỉ có Đang mở / Đang chờ / Đang làm / Đã xong; chưa triển khai đầy đủ bảng trên.
+V5.2 đã triển khai các trạng thái trên cho bảng việc: `Đang mở` cũ được migrate thành `Sẵn sàng`; `Đang chờ` có người/điều đang chờ và điểm xem lại; `Bị chặn` có điều kiện thiếu; `Đã lưu trữ` có thể khôi phục. Dữ liệu cũ không bị gán deadline giả.
 
 **Waiting phải có điểm xem lại.** Nó không phải kiểm tra tin nhắn liên tục, cũng không phải quên việc vô thời hạn. Hạn bên ngoài đã cam kết vẫn có hiệu lực; không đặt deadline cho giá trị bản thân không có nghĩa bỏ mọi deadline công việc.
 
