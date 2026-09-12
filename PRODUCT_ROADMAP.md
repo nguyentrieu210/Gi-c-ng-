@@ -2,7 +2,7 @@
 
 ## Hiện trạng đã kiểm tra
 
-V5: PWA tĩnh, ba màn bảng việc / phiếu review / nhật ký; localStorage; xuất nhập JSON; GitHub Pages. Chưa có backend, tài khoản, đồng bộ, chỉnh sửa nội dung hay khôi phục mục xóa. Nhãn PR và commit trong app là ẩn dụ, không phải GitHub PR/commit thật.
+V5.2: PWA tĩnh, bảng việc theo workflow có điểm xem lại và màn “Bây giờ”, hồ sơ ứng tuyển, phiếu review và nhật ký; localStorage; xuất nhập JSON; GitHub Pages. Chưa có backend, tài khoản hay đồng bộ. Nhãn PR và commit trong app là ẩn dụ, không phải GitHub PR/commit thật.
 
 Các mục dưới đây là kế hoạch, chưa phải chức năng đã hoàn tất. Không đưa dữ liệu riêng tư vào Issues public để triển khai chúng.
 
@@ -17,16 +17,16 @@ Hoàn thành khi:
 - Nhập sao lưu kiểm tra schema, ID trùng và tạo bản phục hồi trước khi thay thế.
 - Kiểm chứng đọc lỗi, hết dung lượng, nhập sai và khôi phục.
 
-## PR 2 — Làm rõ bước tiếp theo
+## PR 2 — Làm rõ bước tiếp theo ✅ Hoàn thành trong V5.2
 
 Vấn đề: task chung chưa thể hiện việc mình làm được và việc phụ thuộc bên ngoài.
 
 Hoàn thành khi:
-- Ready / Doing / Waiting / Blocked / Done / Archived có nghĩa theo OPERATING_MODEL.
-- Waiting lưu điều đang chờ và điểm xem lại; Blocked lưu điều kiện còn thiếu.
-- Có màn “Bây giờ” hiển thị việc hành động được và việc cần xem lại.
-- Không tự đặt hạn, không tự suy ra thất bại từ thời gian chờ.
-- Dữ liệu V5 được chuyển đổi giữ nguyên nội dung; chỉ mục mới dùng trường bắt buộc mới.
+- `Sẵn sàng / Đang làm / Đang chờ / Bị chặn / Đã xong / Đã lưu trữ` có nghĩa theo OPERATING_MODEL.
+- `Đang chờ` lưu người/điều đang chờ và điểm xem lại; `Bị chặn` lưu điều kiện còn thiếu; dữ liệu cũ được migrate không bịa thêm deadline.
+- Màn `Bây giờ` hiển thị việc có thể hành động, việc tới điểm xem lại và việc thiếu dữ kiện.
+- Có sửa việc, lưu trữ/khôi phục, lọc theo trạng thái và không tự kết luận thất bại vì thời gian chờ.
+- Dữ liệu V5 được chuyển đổi giữ nguyên nội dung; state hiện tại lên schema v3.
 
 ## PR 3 — Lưu riêng tư và đồng bộ
 
