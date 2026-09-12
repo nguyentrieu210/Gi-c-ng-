@@ -5,7 +5,7 @@ const legacyStatuses={open:'ready',waiting:'waiting',doing:'doing',done:'done'};
 const fields=['id','date','title','category','next','status','waitingFor','reviewOn','blockedBy','archiveReason'];
 function isDate(value){
  if(value==='')return true;
- if(!/^\\d{4}-\\d{2}-\\d{2}$/.test(value))return false;
+ if(!/^\d{4}-\d{2}-\d{2}$/.test(value))return false;
  const date=new Date(value+'T00:00:00Z');
  return Number.isFinite(date.getTime())&&date.toISOString().slice(0,10)===value;
 }
